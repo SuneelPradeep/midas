@@ -17,7 +17,7 @@ const products = () => {
  <p>Array Group Receivers</p></span>
         </div>
         <div>
-          <Image src={Products} alt='products' width='auto' height='auto' className='object-contain' />
+          <Image src={Products} alt='products' width={768} height={523} className='object-contain' />
         </div>
     </section>
   )
