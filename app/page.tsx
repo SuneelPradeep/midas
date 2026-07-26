@@ -1,4 +1,5 @@
 import Carousel from "./components/Carousel";
+import Services from "./services/page";
 
 export default function Home() {
   return (
@@ -8,8 +9,9 @@ export default function Home() {
       <main 
       // className="flex flex-1 w-full h-full max-w-3xl flex-col items-center justify-between py-32 px-16 bg-white dark:bg-black sm:items-start"
       >
-        <div>
+        <div className='flex flex-col gap-4 '>
           <Carousel />
+          <Services  />
           </div>
       </main>
     </div>

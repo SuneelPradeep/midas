@@ -20,11 +20,11 @@ const Header = () => {
       height={150}/></Link>
       </div>
 
-      <div className='hidden md:flex align-center  gap-8  font-semibold text-lg '>
+      <div className='hidden md:flex all-center gap-8  font-semibold text-2xl '>
         
-         <Link href="/products">Products</Link>
-          <Link href="/contact">Contact</Link>
+         <Link href="/products">Products</Link>        
           <Link href="/about-us">About Us</Link>
+          <Link href="/contact">Contact</Link>
            
       </div>
 
@@ -36,8 +36,8 @@ const Header = () => {
         <div className='absolute top-full left-0 w-full bg-white shadow-lg md:hidden z-50'>
           <div className='flex flex-col items-center py-6 gap-6 text-lg'>
              <Link href="/products" onClick={toggleMenu}>Products</Link>
-          <Link href="/contact" >Contact</Link>
-          <Link href="/about-us" >About Us</Link>
+          <Link href="/about-us" onClick={toggleMenu}>About Us</Link>
+          <Link href="/contact" onClick={toggleMenu}>Contact</Link>
           </div>
           </div>
       )}
