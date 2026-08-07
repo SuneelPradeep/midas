@@ -1,6 +1,7 @@
 'use client'
 import { motion } from "framer-motion";
 import Image from "next/image";
+import Link from "next/link";
 import { ServicesList } from "../utils/utils";
 const Services = (props:any)=>{
     const {id} = props;
@@ -13,6 +14,11 @@ const Services = (props:any)=>{
     lg:grid-cols-3
     gap-8 text-white">
                 {ServicesList?.map(item=> (
+                    <Link
+    key={item?.id +111}
+    href={`/services/${item.id}`}
+    className="block"
+  >
                     <div className=" group relative overflow-hidden rounded-xl bg-white shadow-lg hover:shadow-2xl transition-all duration-500">
                     <div key={item?.id} className='relative h-84 w-full '>
   <Image
@@ -36,7 +42,7 @@ const Services = (props:any)=>{
   
 </motion.div>
                   
-                    </div></div>
+                    </div></div></Link>
                 ))}
             </div>
             </section>
