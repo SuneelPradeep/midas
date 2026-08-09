@@ -132,7 +132,7 @@ const Header = () => {
 
               {expanded === item.title && (
 
-                <div className="bg-gray-50">
+                <div className="bg-black text-white">
 
                   {item?.links && item.links?.map((link) => (
 

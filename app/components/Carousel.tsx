@@ -17,7 +17,7 @@ const Carousel = () => {
   }, []);
 
   return (
-    <div className="relative w-full h-180 overflow-hidden rounded-xl ">
+    <div className="relative w-full aspect-768/523 overflow-hidden rounded-xl ">
       <AnimatePresence mode="wait">
         <motion.div
           key={current}
@@ -32,7 +32,8 @@ const Carousel = () => {
             alt={Images?.[current]?.title}
             fill
             priority
-            className="object-contain w-full rounded-md h-full"
+            className="object-contain rounded-md"
+            sizes="100vw"
           />
 
           {/* Dark Overlay */}
