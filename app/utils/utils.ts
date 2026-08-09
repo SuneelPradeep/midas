@@ -11,19 +11,27 @@ import Service6 from '../images/6.jpg'
 import Service7 from '../images/7.jpg'
 import Service8 from '../images/8.jpg'
 import Product1 from '../images/Antenna_Positioner.jpeg'
-import Pic1 from '../images/pic1.jpg'
-import Pic2 from '../images/pic2.jpg'
-import Pic3 from '../images/pic3.jpg'
-import Pic4 from '../images/pic4.jpg'
+import Pic2 from '../images/carousel (1).jpg'
+import Pic4 from '../images/carousel (3).jpg'
+import Pic5 from '../images/carousel (4).jpg'
+import Pic6 from '../images/carousel (5).jpg'
+import Pic7 from '../images/carousel (6).jpg'
+import Pic8 from '../images/carousel (7).jpg'
+import Pic1 from '../images/carousel (8).jpg'
+import Pic9 from '../images/carousel (9).jpg'
 import Product5 from '../images/Positioner.jpeg'
 import Product6 from '../images/power_supply_modules.jpeg'
 import Product7 from '../images/power_supply_units.jpeg'
 import Product8 from '../images/power_supply_units_1.jpeg'
 export const Images = [
-    {title :'Carrier Plane', src:Pic1,description : 'made components for Carrier Plane'},
-    {title :'Fighter Jet', src:Pic2,description : 'made components for assembling Fighter Jet'},
-    {title :'Chopper', src:Pic3,description : 'made components for Chopper'} ,
-    {title :'Army Tank', src:Pic4,description : 'made components for Army Tank'} ,
+    {title :'System Design Engineering', src:Pic8,description : ''},
+    {title :'Drones & UAV System', src:Pic6,description : ''},
+    {title :'Power Electronics', src:Pic2,description : ''} ,
+    {title :'Integration & Cable Assembly', src:Pic4,description : ''} ,
+    {title :'PreFabricated Modular Data Centres', src:Pic5,description : ''} ,
+    {title :'Vacuum Brazing', src:Pic7,description : ''} ,
+    {title :'Electrical Design', src:Pic1,description : ''} ,
+     {title :'Servo System', src:Pic9,description : ''} ,
     // {title: 'Liquid Cooled Transmitter System', src: Pic5, description:'High Power Liquid Cooled transmitter solution' },
     // {title:'Mobile Transmitter System', src:Pic6, description:'The Mobile Transmitter System is self contained highly reliable communication solution'}
 
@@ -31,10 +39,10 @@ export const Images = [
 
 export const ServicesList = [
     {id:'1', title: 'Product Design and Development',
-        src:Service1,
+        src:Service1, anotherSrc:Service1,
         description :`Passive Products : 1. Power Combiners 2. Power Dividers 3. Antenna (Patch, Horn, Slotted, Waveguide etc) 
         Active Products : 1. Low Noise Amplifier (LNA)2. Power Amplifiers (PA) 3. Power Supplies (PS)4. Power Distribution Modules (PDM)`},
-{id:'2', title:'Engineering services',src:Service2,description :`We offer a full spectrum of engineering services—from concept design and digital  modeling to systems validation and lifecycle management—supported by cutting edge technologies. ensuring consistent quality, technical excellence, and agile delivery. 
+{id:'2', title:'Engineering services',src:Service2, anotherSrc:Pic8, description :`We offer a full spectrum of engineering services—from concept design and digital  modeling to systems validation and lifecycle management—supported by cutting edge technologies. ensuring consistent quality, technical excellence, and agile delivery. 
 •Product Design & Development: Conceptual and detailed mechanical design 
 using the latest CAD/CAE platforms, ensuring performance, safety, and compliance.
 •Computer-Aided Engineering (CAE): Finite Element Analysis (FEA), 
@@ -57,7 +65,7 @@ AC-DC Converters
  Boost converters
  Buck converters
  Flyback converter `},
-{id:'3', title:'Built to Specification (BTS) and Buit to Print (BTP)  for module level and system level',src:Service3,description:` 
+{id:'3', title:'Built to Specification (BTS) and Buit to Print (BTP)  for module level and system level',src:Service3, anotherSrc:Service3, description:` 
 
 Electromechanical Assemblies
 Power Distribution Units
@@ -67,7 +75,7 @@ Signal Box
 Frame Assemblies
 Integrated console system Assembly
 `},
-{id:'4', title: 'Cable Assembly, Cable Harnessing, PCB Soldering and PCB Assembly and Integration',src:Service4,description:`MIL-Spec Cables
+{id:'4', title: 'Cable Assembly, Cable Harnessing, PCB Soldering and PCB Assembly and Integration',src:Service4, anotherSrc:Pic4, description:`MIL-Spec Cables
 Power Assemblies
 RF/Coaxial Cables
 Multi-Branched Cables
@@ -76,12 +84,12 @@ Aerospace Cables
 Medical Assemblies
 Fiber Optical Cables
 `},
-{id:'5', title: 'Precision Manufacturing for critical components',src:Service5,description:`Techanical Sub-Assemblies and Assemblies Fabrication
+{id:'5', title: 'Precision Manufacturing for critical components',src:Service5, anotherSrc:Service5, description:`Techanical Sub-Assemblies and Assemblies Fabrication
 • CNC machine programmers and Operators
 • Support team for tapping, drilling, Heli coil inserts etc.
 • CNC/VMC machines make HAAS, model VF-2I – 2 Machines
 • Drilling, Tapping, Helicoil Inserts etc.`},
-{id:'6', title: 'Servo Design and Development',src:Service6,description:`•Custom Servo Motor Design:
+{id:'6', title: 'Servo Design and Development',src:Service6, anotherSrc:Pic9, description:`•Custom Servo Motor Design:
 Servo Design 
 &
 Development
@@ -105,7 +113,7 @@ Rapid prototyping, testing, and scalability to
 production volumes with full compliance to 
 industrial standard`},
 
-{id:'7', title:'Strategic payloads for Drones and services',src:Service7,description:`Specification 
+{id:'7', title:'Strategic payloads for Drones and services',src:Service7,anotherSrc:Pic6, description:`Specification 
 Standard multirotor configuration. 
 Payload - 10 Kg & 20Kg
 Range -3Km 
@@ -113,7 +121,7 @@ Size - 1.4 x1.4m.
 Cruise Speed - 25 Km/hr. 
 Endurance – 25-30min
 `},
-{id:'8', title:'Provides Technical Support for Qualification of products  like ESS, ATP and QTP',src:Service8,description:` Stage Wise Process :
+{id:'8', title:'Provides Technical Support for Qualification of products  like ESS, ATP and QTP',src:Service8, anotherSrc:Pic7, description:` Stage Wise Process :
 • Raw Material Certification with traceability for each Lot
 • Machining of Pre Braze and Post Braze in CNC machine
 • Ultrasonic Cleaning of all the cold plates

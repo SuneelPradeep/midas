@@ -38,7 +38,7 @@ export default async function ServicePage({ params }: Props) {
           className="w-full lg:w-1/2 flex justify-center"
         >
           <Image
-            src={service.src}
+            src={service.anotherSrc}
             alt={service.title}
             width={900}
             height={600}

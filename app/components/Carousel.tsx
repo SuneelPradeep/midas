@@ -17,7 +17,7 @@ const Carousel = () => {
   }, []);
 
   return (
-    <div className="relative w-full h-150 overflow-hidden rounded-xl ">
+    <div className="relative w-full h-180 overflow-hidden rounded-xl ">
       <AnimatePresence mode="wait">
         <motion.div
           key={current}
@@ -25,18 +25,18 @@ const Carousel = () => {
           animate={{ opacity: 1, scale: 1 }}
           exit={{ opacity: 0 }}
           transition={{ duration: 1 }}
-          className="absolute inset-0"
+          className="absolute inset-0 bg-blend-color-burn"
         >
           <Image
             src={Images?.[current]?.src}
             alt={Images?.[current]?.title}
             fill
             priority
-            className="object-cover"
+            className="object-contain w-full rounded-md h-full"
           />
 
           {/* Dark Overlay */}
-          <div className="absolute inset-0 bg-black/40" />
+          {/* <div className="absolute inset-0 bg-black/40" /> */}
 
           {/* Animated Text */}
           <motion.div
@@ -48,9 +48,9 @@ const Carousel = () => {
             }}
             className="absolute inset-0 flex flex-col justify-center items-start text-white text-center px-6"
           >
-            <h1 className="text-start text-5xl font-bold">
+            {/* <h1 className="text-start text-5xl font-bold">
               {Images[current].title}
-            </h1>
+            </h1> */}
 
             <p className="text-start mt-4 text-xl max-w-xl">
               {Images[current].description}
@@ -65,9 +65,8 @@ const Carousel = () => {
           <button
             key={index}
             onClick={() => setCurrent(index)}
-            className={`h-3 w-3 rounded-full transition-all ${
-              current === index ? "bg-white w-8" : "bg-gray-400"
-            }`}
+            className={`h-3 w-3 rounded-full transition-all ${current === index ? "bg-white w-8" : "bg-gray-400"
+              }`}
           />
         ))}
       </div>

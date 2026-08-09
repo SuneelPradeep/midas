@@ -122,19 +122,19 @@ export default function ProductsMarquee({
     });
 
     return (
-        <section className="relative overflow-hidden py-24 bg-gradient-to-b from-white via-slate-50 to-white">
+        <section className="relative overflow-hidden py-24 bg-linear-to-b from-white via-slate-50 to-white">
 
-            <h2 className="text-center text-5xl font-bold text-[#27748E] mb-16">
+            <h2 className="text-center text-5xl font-bold logo-color mb-16">
                 Our Products
             </h2>
 
             {/* Left Fade */}
 
-            <div className="absolute left-0 top-0 z-20 h-full w-24 bg-gradient-to-r from-white to-transparent" />
+            <div className="absolute left-0 top-0 z-20 h-full w-24 bg-linear-to-r from-white to-transparent" />
 
             {/* Right Fade */}
 
-            <div className="absolute right-0 top-0 z-20 h-full w-24 bg-gradient-to-l from-white to-transparent" />
+            <div className="absolute right-0 top-0 z-20 h-full w-24 bg-linear-to-l from-white to-transparent" />
 
             <motion.div
                 drag="x"
