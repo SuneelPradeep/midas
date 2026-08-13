@@ -24,8 +24,30 @@
 } */
 
 body {
-  background: var(--background);
+  /* background: var(--background); */
   color: var(--foreground);
+  
+  background-image: url('/white1.jpg');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  min-height: 100vh;
+  /* Path to your image in the public folder */
+  /* background-image: url('/bg.jpg'); */
+  
+  /* Tells the browser to repeat the image both vertically and horizontally */
+  background-repeat: repeat;
+  
+  /* Keeps the image original size so it tiles cleanly */
+  /* background-size: auto; */
+  
+  /* Ensures the background stays fixed while scrolling the page content */
+  /* background-attachment: fixed; */
+  
+  /* Ensures the body takes up the full screen height minimum */
+  /* min-height: 100vh;
+  margin: 0; */
+
 }
 
 
@@ -35,6 +57,13 @@ body {
   @utility logo-color{
     @apply text-[#27748E]
   }
+  @utility bg-logo{
+    @apply bg-[#27748E] 
+  }
+  @utility bg-logo-dark{
+    @apply bg-[#193366] 
+  }
+  
   @utility all-center{
     @apply flex justify-center items-center 
   }

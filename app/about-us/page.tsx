@@ -4,10 +4,7 @@ const AboutUs = () => {
     <section className='flex flex-col  justify-center align-center gap-4 m-4 p-6 '>
       <div className='font-extrabold text-4xl text-gray-800 dark:logo-color  space-x-2.5 flex text-center align-center justify-center mb-8 '>About Us</div>
      <div className='flex flex-col lg:flex-row gap-8 items-center'>
-      <div className="w-full lg:w-1/2">
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3811.249960116613!2d78.474439874981!3d17.206659183650032!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bcba59cf71dabdf%3A0x6357560cf5fc92cd!2sLaxmi%20Nagar%20Colony!5e0!3m2!1sen!2sin!4v1784984139707!5m2!1sen!2sin" 
-        className="w-full h-75 md:h-112.5 rounded-xl" style={{border:0}}  loading="lazy" referrerPolicy="strict-origin-when-cross-origin"></iframe>
-   </div> 
+     
     <div className='w-full lg:w-1/2 flex flex-col justify-center gap-6 text-base md:text-lg p-4'> 
       <span>
         Midas Defence Technologies Private Limited is an active private company incorporated in defence Technologies Private Limited and is started on September 11, 2025. 

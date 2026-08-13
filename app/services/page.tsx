@@ -6,14 +6,14 @@ import { ServicesList } from "../utils/utils";
 const Services = (props: any) => {
     const { id } = props;
     return (
-        <section className='my-8 p-4 bg-black  '>
-            <h2 className="text-center text-5xl font-bold logo-color mb-16">
+        <section className='my-8 p-4 bg-logo-dark  '>
+            <h2 className="text-center  text-3xl lg:text-5xl font-bold text-slate-200 mb-16 mt-4">
                 Our Services
             </h2>
             <div className="grid
     grid-cols-1
     sm:grid-cols-2
-    lg:grid-cols-3
+    lg:grid-cols-4
     gap-8 text-white">
                 {ServicesList?.map(item => (
                     <Link
@@ -22,7 +22,7 @@ const Services = (props: any) => {
                         className="block"
                     >
                         <div className=" group relative overflow-hidden rounded-xl bg-white shadow-lg hover:shadow-2xl transition-all duration-500">
-                            <div key={item?.id} className='relative h-84 w-full  '>
+                            <div key={item?.id} className='relative h-48 md:h-64 lg:h-64 xl:h-84 w-full  '>
                                 <Image
                                     src={item.src}
                                     alt={item.title}

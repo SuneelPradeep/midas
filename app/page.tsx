@@ -1,5 +1,6 @@
 import Carousel from "./components/Carousel";
 import ProductsMarqee from "./components/ProductsMarqee";
+import Mission from "./mission/page";
 import Services from "./services/page";
 import { Products } from "./utils/utils";
 
@@ -13,6 +14,7 @@ export default function Home() {
       >
         <div className='flex flex-col gap-4 '>
           <Carousel />
+          <Mission />
           <Services />
           <ProductsMarqee products={Products} />
         </div>
