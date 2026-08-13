@@ -30,8 +30,9 @@ export default function RootLayout({
       className={`${WorkSans.variable} ${WorkMono.variable} h-full antialiased`}
     >
       <body className="min-h-full flex flex-col">
-        <Header />{children}<Footer />
-        </body>
+        <Header /><main className='flex-1'>{children}</main>
+        <Footer />
+      </body>
     </html>
   );
 }
