@@ -3,7 +3,7 @@ import Link from "next/link"
 
 const Footer = () => {
   return (
-    <section className='bg-logo-dark text-white absolute bottom-0 w-full'>
+    <section className='bg-logo-dark text-white w-full'>
       <div className=' p-4 py-6 mt-4 flex lg:flex-row flex-col gap-4 justify-around align-center  '>
         <div className=' all-center gap-8 text-md'>
           {/* <div className=' flex flex-col gap-4'>
