@@ -15,7 +15,7 @@ export default function Home() {
         <div className='flex flex-col gap-4 '>
           <Carousel />
           <Mission />
-          <Services />
+          <Services color />
           <ProductsMarqee products={Products} />
         </div>
       </main>

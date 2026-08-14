@@ -27,16 +27,6 @@ const Header = () => {
         <Link href='/'><Image alt='logo' src='/midas_transparent.png' width={150}
           height={150} /></Link>
       </div>
-
-      {/* <div className='hidden md:flex all-center gap-8  font-semibold text-2xl '>
-        
-         <Link href="/products">Who We Are</Link>        
-          <Link href="/about-us">What We Do</Link>
-          <Link href="/contact">Investors</Link>
-
-
-           
-      </div> */}
       <div className="hidden md:flex items-center gap-8 font-semibold">
 
         {navItems?.map((item) => (
@@ -80,20 +70,15 @@ const Header = () => {
                   <Link
                     key={link?.name + '111'}
                     href={link.href}
-                    className="block px-5 py-3 hover:bg-[#27748E] hover:text-white transition"
+                    className="block px-5 py-3 hover:bg-logo hover:text-white transition"
+                    onClick={toggleMenu}
                   >
                     {link.name}
                   </Link>
                 ))}
               </div>
             }
-            {/* {item?.href &&<Link
-            
-            href={item?.href || ''}
-            className="block px-5 py-3 hover:bg-[#27748E] hover:text-white transition"
-          >
-            {item?.title}
-          </Link>} */}
+
           </div>
         ))}
 
@@ -128,7 +113,7 @@ const Header = () => {
                     className={`w-5 h-5 transition ${expanded === item.title ? "rotate-180" : ""
                       }`}
                   />}
-                </button> : <button className='p-4 w-full flex items-start text-left'><Link href={item?.href}>{item?.title}</Link></button>}
+                </button> : <button className='p-4 w-full flex items-start text-left' onClick={() => setOpen(false)}><Link href={item?.href}>{item?.title}</Link></button>}
 
               {expanded === item.title && (
 
@@ -143,7 +128,7 @@ const Header = () => {
                         setOpen(false);
                         setExpanded(null);
                       }}
-                      className="block py-3 pl-8 hover:bg-[#27748E] hover:text-white transition"
+                      className="block py-3 pl-8 hover:bg-logo hover:text-white transition"
                     >
                       {link.name}
                     </Link>

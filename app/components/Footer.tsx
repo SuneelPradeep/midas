@@ -4,21 +4,21 @@ import Link from "next/link"
 const Footer = () => {
   return (
     <section className='bg-logo-dark text-white w-full'>
-      <div className=' p-4 py-6 mt-4 flex lg:flex-row flex-col gap-4 justify-around align-center  '>
-        <div className=' all-center gap-8 text-md'>
-          {/* <div className=' flex flex-col gap-4'>
+      <div className=' p-4 py-6 mt-4 flex flex-row  gap-4 justify-around align-center  '>
+        {/* <div className=' all-center gap-8 text-md'> */}
+        {/* <div className=' flex flex-col gap-4'>
           <a href=''>Satellite Programs </a>
          <a href=''> Launch Services</a>
          <a href=''>  Ground Services</a>
          <a href=''> AstroView</a>
          </div> */}
-          <div className='flex flex-col gap-2 '>
-            <Link href=''>About </Link>
-            <Link href=''>Careers</Link>
-            <Link href=''>  Mission & Vision </Link>
-            <Link href=''>  Contact Us </Link>
-          </div>
+        <div className='flex flex-col gap-2 '>
+          <Link href=''>About </Link>
+          <Link href=''>Careers</Link>
+          <Link href=''>  Mission & Vision </Link>
+          <Link href=''>  Contact Us </Link>
         </div>
+        {/* </div> */}
         <div className='md:ms-4 sm:ms-4  flex flex-col justify-center items-start  gap-2  text-md text-start'>
           <span className='all-center text-start  gap-2'>
             <UserIcon className="w-6 h-6" />

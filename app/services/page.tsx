@@ -4,10 +4,10 @@ import Image from "next/image";
 import Link from "next/link";
 import { ServicesList } from "../utils/utils";
 const Services = (props: any) => {
-    const { id } = props;
+    const { id, color = false } = props;
     return (
-        <section className='my-8 p-4 bg-logo-dark  '>
-            <h2 className="text-center  text-3xl lg:text-5xl font-bold text-slate-200 mb-16 mt-4">
+        <section className={`my-8 p-4 ${color ? 'bg-logo-dark' : 'bg-inherit'}  `}>
+            <h2 className={`text-center  text-3xl lg:text-5xl font-bold ${color ? 'text-slate-200' : 'text-gray-800'}  mb-16 mt-4`}>
                 Our Services
             </h2>
             <div className="grid
