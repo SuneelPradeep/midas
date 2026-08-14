@@ -28,14 +28,14 @@ export default async function ServicePage({ params }: Props) {
         {service.title}
       </h1>
 
-      <div className="flex flex-col lg:flex-row items-center gap-12">
+      <div className="flex flex-col items-center gap-12">
 
         {/* Image */}
         <motion.div
           initial={{ opacity: 0, x: -60 }}
           animate={{ opacity: 1, x: 0 }}
           transition={{ duration: 0.8 }}
-          className="w-full lg:w-1/2 flex justify-center"
+          className="w-2/3 flex justify-center "
         >
           <Image
             src={service.anotherSrc}
@@ -45,10 +45,10 @@ export default async function ServicePage({ params }: Props) {
             priority
             className="
           w-full
-          max-w-225
+          
           h-auto
           rounded-2xl
-          shadow-2xl
+          shadow-lg
           object-cover
         "
           />
@@ -59,9 +59,9 @@ export default async function ServicePage({ params }: Props) {
           initial={{ opacity: 0, x: 60 }}
           animate={{ opacity: 1, x: 0 }}
           transition={{ duration: 0.8, delay: 0.2 }}
-          className="w-full lg:w-1/2"
+          className="w-full "
         >
-          <p className="text-base lg:text-lg leading-9 text-gray-700">
+          <p className="text-md lg:text-lg leading-9 text-gray-700">
             {service.description}
           </p>
         </motion.div>

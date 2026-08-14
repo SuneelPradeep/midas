@@ -12,7 +12,10 @@ import Product1 from '../images/Antenna_Positioner11.png'
 import Product13 from '../images/Antenna_Positioner22.jpeg'
 import Pic6 from '../images/carousel (5).jpg'
 import Pic8 from '../images/carousel (7).jpg'
+import Client1 from '../images/cyient.png'
+import Client from '../images/drdo.png'
 import Product15 from '../images/Drone_22.jpeg'
+import Client2 from '../images/isro.png'
 import Product5 from '../images/Positioner.jpeg'
 import Product6 from '../images/power_supply_modules.jpeg'
 import Product7 from '../images/power_supply_units.jpeg'
@@ -311,4 +314,22 @@ export const Products = [
 
 export const BGImages = [
    '/color.png',  '/color1.jpg','/color2.jpg','/color.png'
+]
+
+export const ClientsList = [
+  {
+    id: '1',
+    title: "DRDO",
+    src: Client,
+  },
+  {
+    id: '2',
+    title: "Cyient",
+    src: Client1,
+  },
+  {
+    id: '3',
+    title: "ISRO",
+    src: Client2,
+  },
 ]

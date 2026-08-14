@@ -11,23 +11,24 @@ type Product = {
 };
 
 export default function ProductsMarquee({
-    products,
+    data, title
 }: {
-    products: Product[];
+    data: Product[];
+    title: string;
 }) {
     const x = useMotionValue(0);
 
     const speed = useRef(0.7);
 
     // duplicate 3x for seamless loop
-    const items = [...products, ...products, ...products];
+    const items = [...data, ...data, ...data];
 
     useAnimationFrame(() => {
         let latest = x.get();
 
         latest -= speed.current;
 
-        const width = products.length * 340;
+        const width = data.length * 340;
 
         if (Math.abs(latest) >= width) {
             latest = 0;
@@ -40,7 +41,7 @@ export default function ProductsMarquee({
         <section className="relative overflow-hidden py-24 bg-linear-to-b from-white via-slate-50 to-white">
 
             <h2 className="text-center text-3xl lg:text-5xl font-bold logo-color mb-16">
-                Our Products
+                {title || ''}
             </h2>
 
             {/* Left Fade */}

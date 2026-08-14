@@ -1,3 +1,4 @@
+import Clients from "./clients/page";
 import Carousel from "./components/Carousel";
 import ProductsMarqee from "./components/ProductsMarqee";
 import Mission from "./mission/page";
@@ -16,7 +17,8 @@ export default function Home() {
           <Carousel />
           <Mission />
           <Services color />
-          <ProductsMarqee products={Products} />
+          <ProductsMarqee data={Products} title="Our Products" />
+          <Clients />
         </div>
       </main>
     </div>

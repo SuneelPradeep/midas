@@ -3,6 +3,6 @@ import { Products } from "../utils/utils";
 
 export default function ProductsPage() {
   return (
-    <ProductsMarqee products={Products} />
+    <ProductsMarqee data={Products} title="Our Products" />
   );
 }

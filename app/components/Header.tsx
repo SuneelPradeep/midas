@@ -24,8 +24,8 @@ const Header = () => {
   return (
     <nav className='relative py-4 px-6 flex justify-between align-center'>
       <div>
-        <Link href='/'><Image alt='logo' src='/midas_transparent.png' width={150}
-          height={150} /></Link>
+        <Link href='/'><Image alt='logo' src='/midas_transparent.png' width={120}
+          height={120} /></Link>
       </div>
       <div className="hidden md:flex items-center gap-8 font-semibold">
 
