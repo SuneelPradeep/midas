@@ -141,7 +141,7 @@ export  const navItems = [
     title: "Who We Are",
     links: [
       { name: "About Us", href: "/about-us" },
-      { name: "Leadership", href: "/about-us" },
+      { name: "Leadership", href: "/leaders" },
       { name: "Mission & Vision", href: "/mission" },
     ],
     hasChildren:true
