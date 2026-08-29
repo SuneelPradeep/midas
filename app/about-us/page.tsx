@@ -1,37 +1,41 @@
 'use client'
 const AboutUs = () => {
-return (
+  return (
     <section className='flex flex-col  justify-center align-center gap-4 m-4 p-6 '>
       <div className='font-extrabold text-4xl text-gray-800 dark:logo-color  space-x-2.5 flex text-center align-center justify-center mb-8 '>About Us</div>
       <div className='flex flex-col lg:flex-row gap-8 items-center'>
 
         <div className='w-full flex flex-col justify-center gap-6 text-base md:text-lg p-4'>
           <span>
-            Midas Defence Technologies Private Limited is an active private company incorporated in defence Technologies Private Limited and is started on September 11, 2025.
+            MIDAS Defence Technologies provides end-to-end engineering and product development capabilities, supporting programmes from initial concept and requirements definition through system architecture, detailed design, prototyping, qualification, manufacturing, integration, deployment and lifecycle support.
           </span>
           <span>
-            <b>C.Raghuveer Reddy</b> as CTO & Co founder having 2 decades of
-            experience in  module level to system level products in Defence,
-            Aerospace, medical, Automobile etc.
-            With expertise spanning the design, research,
-            development, production, integration, and maintenance of next
-            generation systems and solutions, Midas Defence is focused on
-            safeguarding national interests and securing critical information
-            and infrastructure. The company actively collaborates with Indian
-            startups and MSMEs that share its commitment to self-reliance,
-            fostering an indigenous defence ecosystem with a strong export
-            orientation, backed by world-class quality and process standards.
-            Dedicated to staying ahead of evolving threats and
-            challenges, the organization ensures its clients remain future-ready
-            and resilient. Guided by a steadfast pursuit of innovation and
-            excellence, Midas Defence continues to deliver best-in-class
-            solutions across all its initiatives. </span>
-          <span>Registered under the Registrar of Companies in Hyderabad, its office is located at Plot No. 27, Lakshmi Nagar, Thukuguda Municipality, Mankhal, Rangareddy, Telangana, India
-          </span>
+
+            <h3 className="font-bold text-xl mb-3">Our integrated engineering capabilities span: </h3>
+            <ul className="list-disc mb-3 ms-6">
+              <li>Mechanical Engineering  </li>
+              <li>Electrical & Electronics Engineering</li>
+              <li>Power Electronics</li>
+              <li>Servo Systems</li>
+              <li>UAV & DRONE SYSTEMS</li>
+              <li>POWER DISTRIBUTION Modules</li>
+              <li>POWER AMPLIFIERS</li>
+              <li>LOW NOISE AMPLIFIERS</li>
+              <li>Thermal Engineering</li>
+              <li>Systems Engineering</li>
+              <li>Product Development</li>
+              <li>Precision Manufacturing </li>
+              <li>System Integration </li>
+            </ul>
+            <span>
+              By bringing these disciplines together, MIDAS develops solutions engineered for performance, reliability, maintainability and operational readiness.
+              Our focus is on creating indigenous technologies, advanced products and precision-engineered systems that address evolving requirements across defence forces, aerospace platforms, naval systems and military applications.
+              From concept to mission readiness, MIDAS transforms complex requirements into engineered capability.
+            </span></span>
         </div></div>
 
 
-    </section>
+    </section >
   )
 }
 
