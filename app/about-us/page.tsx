@@ -7,7 +7,7 @@ const AboutUs = () => {
 
         <div className='w-full flex flex-col justify-center gap-6 text-base md:text-lg p-4'>
           <span>
-            MIDAS Defence Technologies provides end-to-end engineering and product development capabilities, supporting programmes from initial concept and requirements definition through system architecture, detailed design, prototyping, qualification, manufacturing, integration, deployment and lifecycle support.
+            <b> MIDAS Defence Technologies </b> provides end-to-end engineering and product development capabilities, supporting programmes from initial concept and requirements definition through system architecture, detailed design, prototyping, qualification, manufacturing, integration, deployment and lifecycle support.
           </span>
           <span>
 
