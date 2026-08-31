@@ -15,6 +15,8 @@ import Pic8 from '../images/carousel (7).jpg'
 import Client1 from '../images/cyient.png'
 import Client from '../images/drdo.png'
 import Product15 from '../images/Drone_22.jpeg'
+import Product16 from '../images/SERVO SYSTEMS.png'
+import Product17 from '../images/DC - DC POWER SUPPLY.png'
 import Client2 from '../images/isro.png'
 import Product5 from '../images/Positioner.jpeg'
 import Product6 from '../images/power_supply_modules.jpeg'
@@ -203,6 +205,25 @@ export const Images = [  {
     description:
      ''
   },
+  {
+    id: '5',
+    title: "Servo System",
+    src: Product16,
+     bg: '/nature1.jpg',
+    description:
+     ''
+  },
+  {
+    id: '6',
+    title: "DC Power Supply",
+    src: Product17,
+     bg: '/nature1.jpg',
+    description:
+     ''
+  },
+  
+   
+
   // {
   //   id: '3',
   //   title: "10kW SSPA",

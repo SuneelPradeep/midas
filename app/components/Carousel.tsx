@@ -2470,10 +2470,11 @@ import {
   useCallback,
   useEffect,
   useRef,
-  useState,
+  useState
 } from "react";
 
 import { Images } from "../utils/utils";
+import Loader from "./Loader";
 
 
 // ==========================================
@@ -2493,6 +2494,42 @@ const STRIP_HEIGHT = 55;
 // ==========================================
 
 const Carousel = () => {
+  const [imagesLoaded, setImagesLoaded] = useState(false);
+
+  useEffect(() => {
+    let cancelled = false;
+
+    const preloadImages = async () => {
+      const imagePromises = Images.map((item) => {
+        return new Promise<void>((resolve) => {
+          const img = new window.Image();
+
+          img.onload = () => {
+            resolve();
+          };
+
+          img.onerror = () => {
+            // Don't let one broken image block the carousel forever
+            resolve();
+          };
+
+          img.src = item.src.src;
+        });
+      });
+
+      await Promise.all(imagePromises);
+
+      if (!cancelled) {
+        setImagesLoaded(true);
+      }
+    };
+
+    preloadImages();
+
+    return () => {
+      cancelled = true;
+    };
+  }, []);
 
   const [current, setCurrent] =
     useState(0);
@@ -2823,7 +2860,9 @@ const Carousel = () => {
   // ==========================================
   // RENDER
   // ==========================================
-
+  if (!imagesLoaded) {
+    return <Loader />;
+  }
   return (
 
     <section className="w-full">
@@ -3002,6 +3041,7 @@ const Carousel = () => {
             </div>
 
 
+
             {/* =================================
                 SOFT TEXT BACKGROUND
             ================================== */}
@@ -3013,7 +3053,7 @@ const Carousel = () => {
 
                 pointer-events-none
 
-                bg-gradient-to-r
+                bg-linear-to-r
 
                 from-white/90
                 via-white/45
@@ -3471,6 +3511,7 @@ const Carousel = () => {
       </div>
 
     </section>
+
   );
 };
 
