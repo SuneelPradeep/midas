@@ -1,27 +1,25 @@
 import Service1 from '../images/1.jpg'
 import Product2 from '../images/10kW SSPA.jpeg'
 import Product3 from '../images/10kW SSPA_1.jpeg'
-import Product12 from '../images/10kW_SSP_22.jpeg'
 import Service2 from '../images/2.jpg'
 import Product9 from '../images/20kW SSPA.jpeg'
 import Product4 from '../images/20kW_SSPA_11.png'
-import Product14 from '../images/20kW_SSPA_22.jpeg'
 import Service5 from '../images/5.jpg'
 import Service7 from '../images/7.jpg'
 import Product1 from '../images/Antenna_Positioner11.png'
-import Product13 from '../images/Antenna_Positioner22.jpeg'
 import Pic6 from '../images/carousel (5).jpg'
 import Pic8 from '../images/carousel (7).jpg'
 import Client1 from '../images/cyient.png'
+import Product18 from '../images/dc.png'
 import Client from '../images/drdo.png'
-import Product15 from '../images/Drone_22.jpeg'
-import Product16 from '../images/SERVO SYSTEMS.png'
-import Product17 from '../images/DC - DC POWER SUPPLY.png'
 import Client2 from '../images/isro.png'
+import Product21 from '../images/liquid.png'
 import Product5 from '../images/Positioner.jpeg'
 import Product6 from '../images/power_supply_modules.jpeg'
 import Product7 from '../images/power_supply_units.jpeg'
 import Product8 from '../images/power_supply_units_1.jpeg'
+import Product19 from '../images/serv.png'
+import Product20 from '../images/teth.png'
 
 // export const Images = [
     
@@ -173,54 +171,87 @@ export  const navItems = [
 ];
 
 
-export const Images = [  {
-    id: '1',
-    title: "Antenna_Positioner",
-    src: Product13,
-    bg: '/nature.jpg',
-    description:
-    'made for antenna develop    made for antenna develop made for antenna develop made for antenna develop'
+export const Images = [  
+  // {
+  //   id: '1',
+  //   title: "Antenna_Positioner",
+  //   src: Product13,
+  //   bg: '/nature.jpg',
+  //   description:
+  //   'made for antenna develop    made for antenna develop made for antenna develop made for antenna develop'
+  // },
+  // {
+  //   id: '2',
+  //   title: "10kW SSPA",
+  //   src: Product12,
+  //    bg: '/nature1.jpg',
+  //   description:
+  //    'made for SSPA develop     made for SSPA develop    made for SSPA develop'
+  // },
+  //  {
+  //   id: '3',
+  //   title: "20kW SSPA",
+  //   src: Product14,
+  //    bg: '/nature1.jpg',
+  //   description:
+  //    'made for SSPA develop     made for SSPA develop    made for SSPA develop'
+  // },
+  // {
+  //   id: '4',
+  //   title: "Drone",
+  //   src: Product15,
+  //    bg: '/nature1.jpg',
+  //   description:
+  //    ''
+  // },
+  // {
+  //   id: '5',
+  //   title: "Servo System",
+  //   src: Product16,
+  //    bg: '/nature1.jpg',
+  //   description:
+  //    ''
+  // },
+  // {
+  //   id: '6',
+  //   title: "DC Power Supply",
+  //   src: Product17,
+  //    bg: '/nature1.jpg',
+  //   description:
+  //    ''
+  // },
+  {
+    id:'7',
+    title:'',
+    src:Product18,
+    bg:'/nature1.jpg',
+    description:''
   },
   {
-    id: '2',
-    title: "10kW SSPA",
-    src: Product12,
-     bg: '/nature1.jpg',
-    description:
-     'made for SSPA develop     made for SSPA develop    made for SSPA develop'
-  },
-   {
-    id: '3',
-    title: "20kW SSPA",
-    src: Product14,
-     bg: '/nature1.jpg',
-    description:
-     'made for SSPA develop     made for SSPA develop    made for SSPA develop'
+    id:'8',
+    title:'',
+    src:Product19,
+    bg:'/nature1.jpg',
+    description:''
   },
   {
-    id: '4',
-    title: "Drone",
-    src: Product15,
-     bg: '/nature1.jpg',
-    description:
-     ''
-  },
-  {
-    id: '5',
-    title: "Servo System",
-    src: Product16,
-     bg: '/nature1.jpg',
-    description:
-     ''
-  },
-  {
-    id: '6',
-    title: "DC Power Supply",
-    src: Product17,
-     bg: '/nature1.jpg',
-    description:
-     ''
-  },
+    id:'9',
+    title:'',
+    src:Product20,
+    bg:'/nature1.jpg',
+    description:''
+  }
+,{
+    id:'10',
+    title:'',
+    src:Product21,
+    bg:'/nature1.jpg',
+    description:''
+  }
+
+
+
+
   
    
 

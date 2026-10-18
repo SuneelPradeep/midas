@@ -1,5 +1,9 @@
+import {
+  Suspense
+} from "react";
 import Clients from "./clients/page";
 import Carousel from "./components/Carousel";
+import Loader from "./components/Loader";
 import ProductsMarqee from "./components/ProductsMarqee";
 import Mission from "./mission/page";
 import Services from "./services/page";
@@ -14,7 +18,7 @@ export default function Home() {
       // className="flex flex-1 w-full h-full max-w-3xl flex-col items-center justify-between py-32 px-16 bg-white dark:bg-black sm:items-start"
       >
         <div className='flex flex-col gap-4 '>
-          <Carousel />
+          <Suspense fallback={<Loader />}><Carousel /></Suspense>
           <Mission />
           <Services color />
           <ProductsMarqee data={Products} title="Our Products" />

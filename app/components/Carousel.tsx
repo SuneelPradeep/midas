@@ -2467,6 +2467,7 @@ import {
 import Image from "next/image";
 
 import {
+  Suspense,
   useCallback,
   useEffect,
   useRef,
@@ -2495,6 +2496,7 @@ const STRIP_HEIGHT = 55;
 
 const Carousel = () => {
   const [imagesLoaded, setImagesLoaded] = useState(false);
+  console.log('iamges', imagesLoaded)
 
   useEffect(() => {
     let cancelled = false;
@@ -2864,18 +2866,18 @@ const Carousel = () => {
     return <Loader />;
   }
   return (
+    <Suspense fallback={<Loader />}>
+      <section className="w-full">
 
-    <section className="w-full">
 
-
-      {/* =====================================
+        {/* =====================================
           RESPONSIVE IMAGE CONTAINER
       ====================================== */}
 
-      <div
-        ref={carouselRef}
+        <div
+          ref={carouselRef}
 
-        className="
+          className="
           relative
           w-full
           overflow-hidden
@@ -2883,97 +2885,97 @@ const Carousel = () => {
           select-none
         "
 
-        style={{
-          height:
-            carouselHeight
-              ? `${carouselHeight}px`
-              : "auto",
-        }}
-      >
+          style={{
+            height:
+              carouselHeight
+                ? `${carouselHeight}px`
+                : "auto",
+          }}
+        >
 
 
-        {/* ===================================
+          {/* ===================================
             SLIDE
         ==================================== */}
 
-        <AnimatePresence
-          initial={false}
-          custom={direction}
-          mode="sync"
-        >
-
-          <motion.div
-
-            key={current}
-
+          <AnimatePresence
+            initial={false}
             custom={direction}
+            mode="sync"
+          >
 
-            variants={{
+            <motion.div
 
-              enter: (
-                direction: 1 | -1
-              ) => ({
-                x:
-                  direction === 1
-                    ? "100%"
-                    : "-100%",
+              key={current}
 
-                opacity: 0,
-              }),
+              custom={direction}
 
-              center: {
-                x: 0,
-                opacity: 1,
-              },
+              variants={{
 
-              exit: (
-                direction: 1 | -1
-              ) => ({
-                x:
-                  direction === 1
-                    ? "-100%"
-                    : "100%",
+                enter: (
+                  direction: 1 | -1
+                ) => ({
+                  x:
+                    direction === 1
+                      ? "100%"
+                      : "-100%",
 
-                opacity: 0,
-              }),
+                  opacity: 0,
+                }),
 
-            }}
+                center: {
+                  x: 0,
+                  opacity: 1,
+                },
 
-            initial="enter"
+                exit: (
+                  direction: 1 | -1
+                ) => ({
+                  x:
+                    direction === 1
+                      ? "-100%"
+                      : "100%",
 
-            animate="center"
+                  opacity: 0,
+                }),
 
-            exit="exit"
+              }}
 
-            transition={{
+              initial="enter"
 
-              x: {
-                type: "spring",
-                stiffness: 85,
-                damping: 22,
-                mass: 0.8,
-              },
+              animate="center"
 
-              opacity: {
-                duration: 0.35,
-              },
+              exit="exit"
 
-            }}
+              transition={{
 
-            drag="x"
+                x: {
+                  type: "spring",
+                  stiffness: 85,
+                  damping: 22,
+                  mass: 0.8,
+                },
 
-            dragConstraints={{
-              left: 0,
-              right: 0,
-            }}
+                opacity: {
+                  duration: 0.35,
+                },
 
-            dragElastic={0.12}
+              }}
 
-            onDragEnd={
-              handleDragEnd
-            }
+              drag="x"
 
-            className="
+              dragConstraints={{
+                left: 0,
+                right: 0,
+              }}
+
+              dragElastic={0.12}
+
+              onDragEnd={
+                handleDragEnd
+              }
+
+              className="
               absolute
               inset-0
               w-full
@@ -2984,15 +2986,15 @@ const Carousel = () => {
 
               touch-pan-y
             "
-          >
+            >
 
 
-            {/* =================================
+              {/* =================================
                 FULL IMAGE
             ================================== */}
 
-            <div
-              className="
+              <div
+                className="
                 absolute
                 inset-0
 
@@ -3003,29 +3005,29 @@ const Carousel = () => {
 
                 pointer-events-none
               "
-            >
+              >
+                <Suspense fallback={<Loader />}>
+                  <Image
 
-              <Image
+                    src={
+                      currentImage.src
+                    }
 
-                src={
-                  currentImage.src
-                }
+                    alt={
+                      currentImage.title
+                    }
 
-                alt={
-                  currentImage.title
-                }
+                    fill
 
-                fill
+                    priority={
+                      current === 0
+                    }
 
-                priority={
-                  current === 0
-                }
+                    sizes="100vw"
 
-                sizes="100vw"
+                    draggable={false}
 
-                draggable={false}
-
-                className="
+                    className="
                   w-full
                   h-full
 
@@ -3036,57 +3038,59 @@ const Carousel = () => {
 
                   scale-[1.001]
                 "
-              />
+                  />
+                </Suspense>
+              </div>
 
-            </div>
 
 
-
-            {/* =================================
+              {/* =================================
                 SOFT TEXT BACKGROUND
             ================================== */}
 
-            <div
-              className="
+              <div
+                className="
                 absolute
                 inset-0
 
                 pointer-events-none
 
-                bg-linear-to-r
+                
+              "
+              />
+
+              {/* bg-linear-to-r
 
                 from-white/90
                 via-white/45
-                to-transparent
-              "
-            />
+                to-transparent */}
 
 
-            {/* =================================
+              {/* =================================
                 TEXT
             ================================== */}
 
-            <motion.div
+              <motion.div
 
-              key={`text-${current}`}
+                key={`text-${current}`}
 
-              initial={{
-                opacity: 0,
-                x: -35,
-              }}
+                initial={{
+                  opacity: 0,
+                  x: -35,
+                }}
 
-              animate={{
-                opacity: 1,
-                x: 0,
-              }}
+                animate={{
+                  opacity: 1,
+                  x: 0,
+                }}
 
-              transition={{
-                duration: 0.8,
-                delay: 0.25,
-                ease: "easeOut",
-              }}
+                transition={{
+                  duration: 0.8,
+                  delay: 0.25,
+                  ease: "easeOut",
+                }}
 
-              className="
+                className="
                 pointer-events-none
 
                 absolute
@@ -3114,10 +3118,10 @@ const Carousel = () => {
 
                 lg:max-w-[58%]
               "
-            >
+              >
 
-              <h1
-                className="
+                <h1
+                  className="
                   text-2xl
 
                   sm:text-4xl
@@ -3134,15 +3138,15 @@ const Carousel = () => {
 
                   text-[#1E293B]
                 "
-              >
-                {
-                  currentImage.title
-                }
-              </h1>
+                >
+                  {
+                    currentImage.title
+                  }
+                </h1>
 
 
-              <p
-                className="
+                <p
+                  className="
                   mt-3
 
                   sm:mt-4
@@ -3165,26 +3169,26 @@ const Carousel = () => {
 
                   text-[#475569]
                 "
-              >
-                {
-                  currentImage.description
-                }
-              </p>
+                >
+                  {
+                    currentImage.description
+                  }
+                </p>
+
+              </motion.div>
+
 
             </motion.div>
 
-
-          </motion.div>
-
-        </AnimatePresence>
+          </AnimatePresence>
 
 
-        {/* =====================================
+          {/* =====================================
             STRIPE TRANSITION
         ====================================== */}
 
-        <div
-          className="
+          <div
+            className="
             pointer-events-none
 
             absolute
@@ -3197,95 +3201,95 @@ const Carousel = () => {
 
             overflow-hidden
           "
-        >
+          >
 
-          {Array.from({
-            length:
-              transitionStripCount.current,
-          }).map(
-            (_, index) => {
+            {Array.from({
+              length:
+                transitionStripCount.current,
+            }).map(
+              (_, index) => {
 
-              const count =
-                transitionStripCount.current;
+                const count =
+                  transitionStripCount.current;
 
 
-              return (
+                return (
 
-                <motion.div
+                  <motion.div
 
-                  key={`${current}-strip-${index}`}
+                    key={`${current}-strip-${index}`}
 
-                  initial={{
-                    scaleX: 1,
-                    opacity: 1,
-                  }}
+                    initial={{
+                      scaleX: 1,
+                      opacity: 1,
+                    }}
 
-                  animate={{
-                    scaleX: 0,
-                    opacity: 0,
-                  }}
+                    animate={{
+                      scaleX: 0,
+                      opacity: 0,
+                    }}
 
-                  transition={{
-                    duration: 0.65,
+                    transition={{
+                      duration: 0.65,
 
-                    delay:
-                      index * 0.045,
+                      delay:
+                        index * 0.045,
 
-                    ease:
-                      [0.76, 0, 0.24, 1],
-                  }}
+                      ease:
+                        [0.76, 0, 0.24, 1],
+                    }}
 
-                  style={{
+                    style={{
 
-                    position:
-                      "absolute",
+                      position:
+                        "absolute",
 
-                    left: 0,
+                      left: 0,
 
-                    top:
-                      `${(index / count) * 100}%`,
+                      top:
+                        `${(index / count) * 100}%`,
 
-                    width:
-                      "100%",
+                      width:
+                        "100%",
 
-                    height:
-                      `${100 / count}%`,
+                      height:
+                        `${100 / count}%`,
 
-                    transformOrigin:
-                      direction === 1
-                        ? "right center"
-                        : "left center",
+                      transformOrigin:
+                        direction === 1
+                          ? "right center"
+                          : "left center",
 
-                  }}
+                    }}
 
-                  className="
+                    className="
                     bg-[#27748E]/90
                   "
-                />
+                  />
 
-              );
+                );
 
-            }
-          )}
+              }
+            )}
 
-        </div>
+          </div>
 
 
-        {/* =====================================
+          {/* =====================================
             PREVIOUS
         ====================================== */}
 
-        <button
+          <button
 
-          type="button"
+            type="button"
 
-          onClick={
-            goPrevious
-          }
+            onClick={
+              goPrevious
+            }
 
-          aria-label="Previous image"
+            aria-label="Previous image"
 
-          className="
+            className="
             absolute
 
             left-4
@@ -3324,35 +3328,35 @@ const Carousel = () => {
 
             hover:scale-110
           "
-        >
+          >
 
-          <span
-            className="
+            <span
+              className="
               text-2xl
               leading-none
             "
-          >
-            ‹
-          </span>
+            >
+              ‹
+            </span>
 
-        </button>
+          </button>
 
 
-        {/* =====================================
+          {/* =====================================
             NEXT
         ====================================== */}
 
-        <button
+          <button
 
-          type="button"
+            type="button"
 
-          onClick={
-            goNext
-          }
+            onClick={
+              goNext
+            }
 
-          aria-label="Next image"
+            aria-label="Next image"
 
-          className="
+            className="
             absolute
 
             right-4
@@ -3391,26 +3395,26 @@ const Carousel = () => {
 
             hover:scale-110
           "
-        >
+          >
 
-          <span
-            className="
+            <span
+              className="
               text-2xl
               leading-none
             "
-          >
-            ›
-          </span>
+            >
+              ›
+            </span>
 
-        </button>
+          </button>
 
 
-        {/* =====================================
+          {/* =====================================
             DOTS
         ====================================== */}
 
-        <div
-          className="
+          <div
+            className="
             absolute
 
             bottom-4
@@ -3436,60 +3440,60 @@ const Carousel = () => {
 
             backdrop-blur-md
           "
-        >
+          >
 
-          {Images.map(
-            (image, index) => (
+            {Images.map(
+              (image, index) => (
 
-              <button
+                <button
 
-                type="button"
+                  type="button"
 
-                key={
-                  image.id ??
-                  index
-                }
-
-                onClick={() =>
-                  handleDotClick(
+                  key={
+                    image.id ??
                     index
-                  )
-                }
+                  }
 
-                aria-label={
-                  `Go to ${image.title}`
-                }
+                  onClick={() =>
+                    handleDotClick(
+                      index
+                    )
+                  }
 
-                className="
+                  aria-label={
+                    `Go to ${image.title}`
+                  }
+
+                  className="
                   flex
                   h-4
                   min-w-2
                   items-center
                   justify-center
                 "
-              >
+                >
 
-                <motion.span
+                  <motion.span
 
-                  animate={{
+                    animate={{
 
-                    width:
-                      current === index
-                        ? 28
-                        : 8,
+                      width:
+                        current === index
+                          ? 28
+                          : 8,
 
-                    opacity:
-                      current === index
-                        ? 1
-                        : 0.5,
+                      opacity:
+                        current === index
+                          ? 1
+                          : 0.5,
 
-                  }}
+                    }}
 
-                  transition={{
-                    duration: 0.25,
-                  }}
+                    transition={{
+                      duration: 0.25,
+                    }}
 
-                  className="
+                    className="
                     block
 
                     h-2
@@ -3498,20 +3502,20 @@ const Carousel = () => {
 
                     bg-white
                   "
-                />
+                  />
 
-              </button>
+                </button>
 
-            )
-          )}
+              )
+            )}
+
+          </div>
+
 
         </div>
 
-
-      </div>
-
-    </section>
-
+      </section>
+    </Suspense>
   );
 };
 
