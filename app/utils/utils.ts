@@ -1,14 +1,8 @@
-import Service1 from '../images/1.jpg'
 import Product2 from '../images/10kW SSPA.jpeg'
 import Product3 from '../images/10kW SSPA_1.jpeg'
-import Service2 from '../images/2.jpg'
 import Product9 from '../images/20kW SSPA.jpeg'
 import Product4 from '../images/20kW_SSPA_11.png'
-import Service5 from '../images/5.jpg'
-import Service7 from '../images/7.jpg'
 import Product1 from '../images/Antenna_Positioner11.png'
-import Pic6 from '../images/carousel (5).jpg'
-import Pic8 from '../images/carousel (7).jpg'
 import Client1 from '../images/cyient.png'
 import Product18 from '../images/dc.png'
 import Client from '../images/drdo.png'
@@ -19,8 +13,17 @@ import Product6 from '../images/power_supply_modules.jpeg'
 import Product7 from '../images/power_supply_units.jpeg'
 import Product8 from '../images/power_supply_units_1.jpeg'
 import Product19 from '../images/serv.png'
-import Product20 from '../images/teth.png'
+import Service11 from '../images/svc_drones.png'
+import Service9 from '../images/svc_electrical.png'
+import Service16 from '../images/svc_integration_cable.png'
+import Service10 from '../images/svc_power_electronics.png'
+import Service13 from '../images/svc_precision.png'
+import Service15 from '../images/svc_prefabricated.png'
+import Service8 from '../images/svc_sde.png'
+import Service12 from '../images/svc_servo.png'
+import Service14 from '../images/svc_vacuum_brazing.png'
 
+import Product20 from '../images/teth.png'
 // export const Images = [
     
 //     {title :'Drones & UAV System', src:Pic6,description : ''},
@@ -37,33 +40,33 @@ import Product20 from '../images/teth.png'
 // ]
 
 export const ServicesList = [
-    {id:'1', title: 'System services',
-        src:Service1, anotherSrc:Service1,
-        description :`Passive Products : 1. Power Combiners 2. Power Dividers 3. Antenna (Patch, Horn, Slotted, Waveguide etc) 
-        Active Products : 1. Low Noise Amplifier (LNA)2. Power Amplifiers (PA) 3. Power Supplies (PS)4. Power Distribution Modules (PDM)`},
-{id:'2', title:'Engineering services',src:Service2, anotherSrc:Pic8, description :`We offer a full spectrum of engineering services—from concept design and digital  modeling to systems validation and lifecycle management—supported by cutting edge technologies. ensuring consistent quality, technical excellence, and agile delivery. 
-•Product Design & Development: Conceptual and detailed mechanical design 
-using the latest CAD/CAE platforms, ensuring performance, safety, and compliance.
-•Computer-Aided Engineering (CAE): Finite Element Analysis (FEA), 
-Computational Fluid Dynamics (CFD), and multi-physics simulations to validate and 
-optimize designs.
-•Prototyping & Testing: Rapid prototyping, functional validation, and mechanical 
-testing to accelerate product readiness and certification.
-•Value Engineering & Cost Optimization: Redesign and optimization of 
-components to improve performance, manufacturability, and sustainability.
-•Manufacturing Engineering: Tool design, process optimization, and production 
-support for global manufacturing environments.
-•Sustainability & Lightweighting: Development of eco-efficient designs and 
-lightweight structures using advanced materials and sustainable engineering 
-practices.
-•Lifecycle Support & Maintenance Engineering: Engineering documentation, 
-reverse engineering, and reliability improvement for legacy systems and products 
+//     {id:'1', title: 'System services',
+//         src:Service1, anotherSrc:Service1,
+//         description :`Passive Products : 1. Power Combiners 2. Power Dividers 3. Antenna (Patch, Horn, Slotted, Waveguide etc) 
+//         Active Products : 1. Low Noise Amplifier (LNA)2. Power Amplifiers (PA) 3. Power Supplies (PS)4. Power Distribution Modules (PDM)`},
+// {id:'2', title:'Engineering services',src:Service2, anotherSrc:Pic8, description :`We offer a full spectrum of engineering services—from concept design and digital  modeling to systems validation and lifecycle management—supported by cutting edge technologies. ensuring consistent quality, technical excellence, and agile delivery. 
+// •Product Design & Development: Conceptual and detailed mechanical design 
+// using the latest CAD/CAE platforms, ensuring performance, safety, and compliance.
+// •Computer-Aided Engineering (CAE): Finite Element Analysis (FEA), 
+// Computational Fluid Dynamics (CFD), and multi-physics simulations to validate and 
+// optimize designs.
+// •Prototyping & Testing: Rapid prototyping, functional validation, and mechanical 
+// testing to accelerate product readiness and certification.
+// •Value Engineering & Cost Optimization: Redesign and optimization of 
+// components to improve performance, manufacturability, and sustainability.
+// •Manufacturing Engineering: Tool design, process optimization, and production 
+// support for global manufacturing environments.
+// •Sustainability & Lightweighting: Development of eco-efficient designs and 
+// lightweight structures using advanced materials and sustainable engineering 
+// practices.
+// •Lifecycle Support & Maintenance Engineering: Engineering documentation, 
+// reverse engineering, and reliability improvement for legacy systems and products 
 
-AC-DC Converters
- DC-DC Converters
- Boost converters
- Buck converters
- Flyback converter `},
+// AC-DC Converters
+//  DC-DC Converters
+//  Boost converters
+//  Buck converters
+//  Flyback converter `},
 // {id:'3', title:'Built to Specification (BTS) and Buit to Print (BTP)  for module level and system level',src:Service3, anotherSrc:Service3, description:` 
 
 // Electromechanical Assemblies
@@ -83,11 +86,11 @@ AC-DC Converters
 // Medical Assemblies
 // Fiber Optical Cables
 // `},
-{id:'5', title: 'Manufacturing Services',src:Service5, anotherSrc:Service5, description:`Techanical Sub-Assemblies and Assemblies Fabrication
-• CNC machine programmers and Operators
-• Support team for tapping, drilling, Heli coil inserts etc.
-• CNC/VMC machines make HAAS, model VF-2I – 2 Machines
-• Drilling, Tapping, Helicoil Inserts etc.`},
+// {id:'5', title: 'Manufacturing Services',src:Service5, anotherSrc:Service5, description:`Techanical Sub-Assemblies and Assemblies Fabrication
+// • CNC machine programmers and Operators
+// • Support team for tapping, drilling, Heli coil inserts etc.
+// • CNC/VMC machines make HAAS, model VF-2I – 2 Machines
+// • Drilling, Tapping, Helicoil Inserts etc.`},
 
 // {id:'6', title: 'Servo Design and Development',src:Service6, anotherSrc:Pic9, description:`•Custom Servo Motor Design:
 // Servo Design 
@@ -113,14 +116,73 @@ AC-DC Converters
 // production volumes with full compliance to 
 // industrial standard`},
 
-{id:'7', title:'Drone services',src:Service7,anotherSrc:Pic6, description:`Specification 
-Standard multirotor configuration. 
-Payload - 10 Kg & 20Kg
-Range -3Km 
-Size - 1.4 x1.4m. 
-Cruise Speed - 25 Km/hr. 
-Endurance – 25-30min
-`},
+// {id:'7', title:'Drone services',src:Service7,anotherSrc:Pic6, description:`Specification 
+// Standard multirotor configuration. 
+// Payload - 10 Kg & 20Kg
+// Range -3Km 
+// Size - 1.4 x1.4m. 
+// Cruise Speed - 25 Km/hr. 
+// Endurance – 25-30min
+// `},
+{id:'8', title:'System Design & Engineering',src:Service8,
+description:`Delivering innovative mechanical engineering solutions 
+from concept to production through an integrated 
+multidiscipllinary approach, ensuring optimized design, 
+manufacturing excellence, product reliability, and 
+successful prototype development and validation.`, content:['Design & Development','Analysis & Simulation', 'Value Engineering','Design Validation & Simulation','Design for Manufacturing (DFM) ','Design for Assembly (DFA)']
+},
+{id:'9', title:'Electrical Design',src:Service9,
+description:`Delivering innovative mechanical engineering solutions 
+from concept to production through an integrated 
+multidiscipllinary approach, ensuring optimized design, 
+manufacturing excellence, product reliability, and 
+successful prototype development and validation.`, content:['Design & Development','Analysis & Simulation', 'Value Engineering','Design Validation & Simulation','Design for Manufacturing (DFM) ','Design for Assembly (DFA)']
+},
+{id:'16', title:'Power Electronics',src:Service10,
+description:`Delivering innovative mechanical engineering solutions 
+from concept to production through an integrated 
+multidiscipllinary approach, ensuring optimized design, 
+manufacturing excellence, product reliability, and 
+successful prototype development and validation.`, content:['Design & Development','Analysis & Simulation', 'Value Engineering','Design Validation & Simulation','Design for Manufacturing (DFM) ','Design for Assembly (DFA)']
+},
+{id:'10', title:'Drones & UAV Systems',src:Service11,
+description:`Delivering innovative mechanical engineering solutions 
+from concept to production through an integrated 
+multidiscipllinary approach, ensuring optimized design, 
+manufacturing excellence, product reliability, and 
+successful prototype development and validation.`, content:['Design & Development','Analysis & Simulation', 'Value Engineering','Design Validation & Simulation','Design for Manufacturing (DFM) ','Design for Assembly (DFA)']
+},{id:'11', title:'Servo Systems',src:Service12,
+description:`Delivering innovative mechanical engineering solutions 
+from concept to production through an integrated 
+multidiscipllinary approach, ensuring optimized design, 
+manufacturing excellence, product reliability, and 
+successful prototype development and validation.`, content:['Design & Development','Analysis & Simulation', 'Value Engineering','Design Validation & Simulation','Design for Manufacturing (DFM) ','Design for Assembly (DFA)']
+},{id:'12', title:'Integration & Cable Assembly',src:Service16,
+description:`Delivering innovative mechanical engineering solutions 
+from concept to production through an integrated 
+multidiscipllinary approach, ensuring optimized design, 
+manufacturing excellence, product reliability, and 
+successful prototype development and validation.`, content:['Design & Development','Analysis & Simulation', 'Value Engineering','Design Validation & Simulation','Design for Manufacturing (DFM) ','Design for Assembly (DFA)']
+},{id:'13', title:'Precision Manufacturing',src:Service13,
+description:`Delivering innovative mechanical engineering solutions 
+from concept to production through an integrated 
+multidiscipllinary approach, ensuring optimized design, 
+manufacturing excellence, product reliability, and 
+successful prototype development and validation.`, content:['Design & Development','Analysis & Simulation', 'Value Engineering','Design Validation & Simulation','Design for Manufacturing (DFM) ','Design for Assembly (DFA)']
+},{id:'14', title:'Vacuum Brazing',src:Service14,
+description:`Delivering innovative mechanical engineering solutions 
+from concept to production through an integrated 
+multidiscipllinary approach, ensuring optimized design, 
+manufacturing excellence, product reliability, and 
+successful prototype development and validation.`, content:['Design & Development','Analysis & Simulation', 'Value Engineering','Design Validation & Simulation','Design for Manufacturing (DFM) ','Design for Assembly (DFA)']
+},
+{id:'15', title:'Prefabricated Modular Data Centers',src:Service15,
+description:`Delivering innovative mechanical engineering solutions 
+from concept to production through an integrated 
+multidiscipllinary approach, ensuring optimized design, 
+manufacturing excellence, product reliability, and 
+successful prototype development and validation.`, content:['Design & Development','Analysis & Simulation', 'Value Engineering','Design Validation & Simulation','Design for Manufacturing (DFM) ','Design for Assembly (DFA)']
+}
 // {id:'8', title:'Provides Technical Support for Qualification of products  like ESS, ATP and QTP',src:Service8, anotherSrc:Pic7, description:` Stage Wise Process :
 // • Raw Material Certification with traceability for each Lot
 // • Machining of Pre Braze and Post Braze in CNC machine
