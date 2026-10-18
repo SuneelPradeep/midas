@@ -132,56 +132,58 @@ manufacturing excellence, product reliability, and
 successful prototype development and validation.`, content:['Design & Development','Analysis & Simulation', 'Value Engineering','Design Validation & Simulation','Design for Manufacturing (DFM) ','Design for Assembly (DFA)']
 },
 {id:'9', title:'Electrical Design',src:Service9,
-description:`Delivering innovative mechanical engineering solutions 
-from concept to production through an integrated 
-multidiscipllinary approach, ensuring optimized design, 
-manufacturing excellence, product reliability, and 
-successful prototype development and validation.`, content:['Design & Development','Analysis & Simulation', 'Value Engineering','Design Validation & Simulation','Design for Manufacturing (DFM) ','Design for Assembly (DFA)']
+description:`Delivering advanced electrical and electronic engineering
+solutions through integrated design and system
+development, ensuring precision, reliability, and 
+seamless integration for mission-critical defence
+and aerospace applications.`, content:['Design & Development','Analysis & Simulation', 'Value Engineering','Design Validation & Simulation','Design for Manufacturing (DFM) ','Design for Assembly (DFA)']
 },
 {id:'16', title:'Power Electronics',src:Service10,
-description:`Delivering innovative mechanical engineering solutions 
-from concept to production through an integrated 
-multidiscipllinary approach, ensuring optimized design, 
-manufacturing excellence, product reliability, and 
-successful prototype development and validation.`, content:['Design & Development','Analysis & Simulation', 'Value Engineering','Design Validation & Simulation','Design for Manufacturing (DFM) ','Design for Assembly (DFA)']
+description:`Delivering high-performance power electronics solutions for 
+Defence, Aerospace, and New platforms through advanced power 
+conversion, intelligent power management, and rugged system
+integration, ensuring maximum efficiency, reliability, and 
+operational readiness.`, content:['Design & Development','Analysis & Simulation', 'Value Engineering','Design Validation & Simulation','Design for Manufacturing (DFM) ','Design for Assembly (DFA)']
 },
 {id:'10', title:'Drones & UAV Systems',src:Service11,
-description:`Delivering innovative mechanical engineering solutions 
-from concept to production through an integrated 
-multidiscipllinary approach, ensuring optimized design, 
-manufacturing excellence, product reliability, and 
-successful prototype development and validation.`, content:['Design & Development','Analysis & Simulation', 'Value Engineering','Design Validation & Simulation','Design for Manufacturing (DFM) ','Design for Assembly (DFA)']
+description:`Robotic systems that redefine the way industries operate. Our team excels tailoring robotic systems
+to meet specific requirements, ensuring optimal performance and efficiency for diverse applications
+across industries.`, content:['Design & Development','Analysis & Simulation', 'Value Engineering','Design Validation & Simulation','Design for Manufacturing (DFM) ','Design for Assembly (DFA)']
 },{id:'11', title:'Servo Systems',src:Service12,
-description:`Delivering innovative mechanical engineering solutions 
-from concept to production through an integrated 
-multidiscipllinary approach, ensuring optimized design, 
-manufacturing excellence, product reliability, and 
-successful prototype development and validation.`, content:['Design & Development','Analysis & Simulation', 'Value Engineering','Design Validation & Simulation','Design for Manufacturing (DFM) ','Design for Assembly (DFA)']
+description:`Design, develop, and produce advanced servo systems integrated
+such as Electro-Optic Systems. High accuracy Pan & Tilt
+Positioners for precise positioning of various payloads such as
+antenna, radar, camera, jammer, weapon, etc. to meet the 
+ever-evolving needs of the armed forces..`, content:['Design & Development','Analysis & Simulation', 'Value Engineering','Design Validation & Simulation','Design for Manufacturing (DFM) ','Design for Assembly (DFA)']
 },{id:'12', title:'Integration & Cable Assembly',src:Service16,
-description:`Delivering innovative mechanical engineering solutions 
-from concept to production through an integrated 
-multidiscipllinary approach, ensuring optimized design, 
-manufacturing excellence, product reliability, and 
-successful prototype development and validation.`, content:['Design & Development','Analysis & Simulation', 'Value Engineering','Design Validation & Simulation','Design for Manufacturing (DFM) ','Design for Assembly (DFA)']
-},{id:'13', title:'Precision Manufacturing',src:Service13,
-description:`Delivering innovative mechanical engineering solutions 
-from concept to production through an integrated 
-multidiscipllinary approach, ensuring optimized design, 
-manufacturing excellence, product reliability, and 
-successful prototype development and validation.`, content:['Design & Development','Analysis & Simulation', 'Value Engineering','Design Validation & Simulation','Design for Manufacturing (DFM) ','Design for Assembly (DFA)']
-},{id:'14', title:'Vacuum Brazing',src:Service14,
-description:`Delivering innovative mechanical engineering solutions 
-from concept to production through an integrated 
-multidiscipllinary approach, ensuring optimized design, 
-manufacturing excellence, product reliability, and 
-successful prototype development and validation.`, content:['Design & Development','Analysis & Simulation', 'Value Engineering','Design Validation & Simulation','Design for Manufacturing (DFM) ','Design for Assembly (DFA)']
+description:`elivering mission-critical cable and wire harness solutions, manufactured to 
+IPC/WHMA-A-620D and customer-specified standards, ensuring precision, reliability, 
+and long-term performance in Defence, Aerospace, and Naval systems.`, content:['Design & Development','Analysis & Simulation', 'Value Engineering','Design Validation & Simulation','Design for Manufacturing (DFM) ','Design for Assembly (DFA)']
+},
+
+{id:'13', title:'Precision Manufacturing',src:Service13,
+description:`Empowering mission-critical platforms with precision
+manufactured components, produced using advanced
+multi-axis machining and precision engineering technologies
+to meet the highest standards of quality, performance, and 
+reliability.`, content:['Design & Development','Analysis & Simulation', 'Value Engineering','Design Validation & Simulation','Design for Manufacturing (DFM) ','Design for Assembly (DFA)']
+},
+
+{id:'14', title:'Vacuum Brazing',src:Service14,
+description:`Providing high-performance liquid cooling solutions
+through precision-manufactured aluminum cold plates
+and advanced vacuum brazing processes, delivering
+exceptional thermal efficiency, structural integrity, and
+long-term reliability for Defence, Aerospace, and Naval 
+systems.`, content:['Design & Development','Analysis & Simulation', 'Value Engineering','Design Validation & Simulation','Design for Manufacturing (DFM) ','Design for Assembly (DFA)']
 },
 {id:'15', title:'Prefabricated Modular Data Centers',src:Service15,
-description:`Delivering innovative mechanical engineering solutions 
-from concept to production through an integrated 
-multidiscipllinary approach, ensuring optimized design, 
-manufacturing excellence, product reliability, and 
-successful prototype development and validation.`, content:['Design & Development','Analysis & Simulation', 'Value Engineering','Design Validation & Simulation','Design for Manufacturing (DFM) ','Design for Assembly (DFA)']
+description:`
+Next-generation prefabricated modular data centers integrate building and
+critical infrastructure into pre-engineered modules. All systems including
+power, cooling, electrical, cabling, and management are pre-integrated,
+factory-tested, and delivered for rapid on-site deployment. This ensures
+faster construction, reduced civil work, and quicker service rollout compared to traditional concrete-built data centers.`, content:['Design & Development','Analysis & Simulation', 'Value Engineering','Design Validation & Simulation','Design for Manufacturing (DFM) ','Design for Assembly (DFA)']
 }
 // {id:'8', title:'Provides Technical Support for Qualification of products  like ESS, ATP and QTP',src:Service8, anotherSrc:Pic7, description:` Stage Wise Process :
 // • Raw Material Certification with traceability for each Lot

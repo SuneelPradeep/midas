@@ -25,14 +25,15 @@ const Footer = () => {
             Raghuveer Reddy</span>
           <span className='all-center text-start gap-2'>
             <EnvelopeIcon className="w-6 h-6" />
-            midas@gmail.com  </span>
+            raghuveerreddy@midasdefence.com  </span>
           <span className='all-center text-start gap-2'>
             <PhoneIcon className='w-6 h-6' />
             +91 9848883887</span>
           <span className='all-center gap-2'>
             <BuildingOfficeIcon className='w-6 h-6' />
             1-2/3 Madhapur, Hyderabad</span>
-          <span className='all-center gap-2' ><strong>GST </strong> 36AABCM1234F1Z5</span>
+          {/* <span className='all-center gap-2' >
+            <strong>GST </strong> 36AABCM1234F1Z5</span> */}
         </div>
 
 
