@@ -12,20 +12,20 @@ const Footer = () => {
          <a href=''>  Ground Services</a>
          <a href=''> AstroView</a>
          </div> */}
-        <div className='flex flex-col gap-2 '>
-          <Link href=''>About </Link>
-          <Link href=''>Careers</Link>
-          <Link href=''>  Mission & Vision </Link>
-          <Link href=''>  Contact Us </Link>
+        <div className='w-1/2 flex flex-col gap-2 '>
+          <Link href='/about-us'>About </Link>
+          <Link href='/careers'>Careers</Link>
+          <Link href='/mission'>  Mission & Vision </Link>
+          <Link href='contact'>  Contact Us </Link>
         </div>
         {/* </div> */}
-        <div className='md:ms-4 sm:ms-4  flex flex-col justify-center items-start  gap-2  text-md text-start'>
+        <div className='w-1/2 md:ms-4 sm:ms-4  flex flex-col justify-center items-start  gap-2  text-md text-start'>
           <span className='all-center text-start  gap-2'>
             <UserIcon className="w-6 h-6" />
             Raghuveer Reddy</span>
-          <span className='all-center text-start gap-2'>
+          <span className='all-center text-start gap-2' style={{ overflow: 'auto', wordBreak: 'break-word' }} >
             <EnvelopeIcon className="w-6 h-6" />
-            raghuveerreddy@midasdefence.com  </span>
+            <span className='text-pretty truncate'>raghuveerreddy@midasdefence.com </span> </span>
           <span className='all-center text-start gap-2'>
             <PhoneIcon className='w-6 h-6' />
             +91 9848883887</span>

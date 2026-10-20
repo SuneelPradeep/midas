@@ -975,7 +975,6 @@
 //   const [direction, setDirection] = useState(1);
 //   const carouselRef = useRef<HTMLDivElement>(null);
 //   const [stripCount, setStripCount] = useState(6);
-//   console.log('strip ', stripCount, carouselRef.current.getBoundingClientRect().height);
 
 //   useEffect(() => {
 //     const element = carouselRef.current;
@@ -2496,7 +2495,7 @@ const STRIP_HEIGHT = 55;
 
 const Carousel = () => {
   const [imagesLoaded, setImagesLoaded] = useState(false);
-  console.log('iamges', imagesLoaded)
+
 
   useEffect(() => {
     let cancelled = false;
